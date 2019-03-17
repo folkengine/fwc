@@ -1,0 +1,2 @@
+# fwc
+Friendly Wagering Coin
