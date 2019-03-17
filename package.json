@@ -7,8 +7,10 @@
   "author": "Christoph <ignatz@gmail.com>",
   "license": "GPL-3.0",
   "scripts": {
-    "postinstall": "npm-run-all --sequential install:*",
+    "compile": "cd contracts && yarn compile",
+    "install": "npm-run-all --sequential install:*",
     "install:contracts": "cd contracts &&  yarn install",
+    "migrate": "cd contracts && yarn migrate",
     "test": "npm-run-all --sequential test:*",
     "test:contracts": "cd contracts && yarn test"
   },
