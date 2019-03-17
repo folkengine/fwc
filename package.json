@@ -1,0 +1,12 @@
+{
+  "name": "fwc",
+  "version": "1.0.0",
+  "description": "Friendly Wagering Coin",
+  "main": "index.js",
+  "repository": "https://github.com/folkengine/fwc.git",
+  "author": "Christoph <ignatz@gmail.com>",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
