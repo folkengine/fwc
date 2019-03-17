@@ -22,8 +22,7 @@ before_install:
   - npm install -g ganache-cli truffle
 
 install:
-  - npm install 
+  - yarn install 
 
 script:
-  - ganache-cli &
-  - truffle test
+  - yarn test
