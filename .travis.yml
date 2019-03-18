@@ -25,6 +25,4 @@ install:
   - yarn install
 
 script:
-  - ganache-cli &
-  - yarn migrate &
   - truffle test
