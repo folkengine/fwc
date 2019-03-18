@@ -7,5 +7,10 @@
     "compile": "truffle compile",
     "migrate": "truffle migrate",
     "test": "truffle test"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "openzeppelin-solidity": "^2.2.0"
   }
 }
