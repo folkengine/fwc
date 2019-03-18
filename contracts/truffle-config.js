@@ -6,5 +6,17 @@ module.exports = {
     solc: {
       version: "0.5.2"
     }
+  },
+  networks: {
+    development: {
+      host: 'localhost',
+      port: 8545,
+      network_id: '*', // eslint-disable-line camelcase
+    },
+    test: {
+      host: "127.0.0.1",
+      port: 7545,
+      network_id: "*"
+    }
   }
 };
