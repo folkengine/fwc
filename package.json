@@ -10,6 +10,7 @@
     "compile": "cd contracts && yarn compile",
     "install": "npm-run-all --sequential install:*",
     "install:contracts": "cd contracts &&  yarn install",
+    "install:client": "cd client &&  yarn install",
     "migrate": "cd contracts && yarn migrate",
     "test": "npm-run-all --sequential test:*",
     "test:client": "cd client && yarn test",
