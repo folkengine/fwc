@@ -9,14 +9,7 @@
     "test": "truffle test"
   },
   "devDependencies": {
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-register": "^6.26.0",
-    "chai": "^4.2.0",
-    "chai-as-promised": "^7.1.1",
-    "ganache-cli": "^6.4.1",
-    "mocha-logger": "^1.0.6",
-    "truffle": "^5.0.8"
+
   },
   "dependencies": {
     "dotenv": "^7.0.0",
