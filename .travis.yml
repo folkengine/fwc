@@ -25,4 +25,5 @@ install:
   - yarn install
 
 script:
+  - ganache-cli &
   - truffle test

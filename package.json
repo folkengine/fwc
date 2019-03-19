@@ -7,14 +7,14 @@
   "author": "Christoph <ignatz@gmail.com>",
   "license": "GPL-3.0",
   "scripts": {
-    "compile": "cd contracts && yarn compile",
-    "install": "npm-run-all --sequential install:*",
-    "install:contracts": "cd contracts &&  yarn install",
+    "compile": "truffle compile",
+    "installAll": "npm-run-all --sequential install:*",
+    "install:contracts": "yarn install",
     "install:client": "cd client &&  yarn install",
-    "migrate": "cd contracts && yarn migrate",
+    "migrate": "truffle migrate",
     "test": "npm-run-all --sequential test:*",
     "test:client": "cd client && yarn test",
-    "test:contracts": "cd contracts && yarn test",
+    "test:contracts": "truffle test",
     "watch": "cd client && react-scripts test"
   },
   "dependencies": {
