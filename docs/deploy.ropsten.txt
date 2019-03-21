@@ -1,0 +1,67 @@
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'infura-fork'
+> Network id:      3
+> Block gas limit: 8007811
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > account:             0x16A94747D128c3ebb779CE32A9Ecf125F3F89799
+   > balance:             14.626536116
+   > gas used:            258162
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000516324 ETH
+
+   -------------------------------------
+   > Total cost:         0.000516324 ETH
+
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.000516324 ETH
+
+
+Starting migrations...
+======================
+> Network name:    'infura'
+> Network id:      3
+> Block gas limit: 8000000
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x23fa30eed17b51f503e4ef2456eba0c867dbd3b9e2f365b792081cdcea5d4387
+   > Blocks: 1            Seconds: 16
+   > contract address:    0xF473E508Ac690b84ed86A44C2CeA90AD6624feC2
+   > account:             0x16A94747D128c3ebb779CE32A9Ecf125F3F89799
+   > balance:             14.6215892
+   > gas used:            273162
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00546324 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00546324 ETH
+
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.00546324 ETH
