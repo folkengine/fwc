@@ -7,10 +7,13 @@
   "author": "Christoph <ignatz@gmail.com>",
   "license": "GPL-3.0",
   "scripts": {
+    "clean": "npm-run-all --sequential clean:*",
+    "clean:solidity": "rm -rf node_modules yarn.lock",
+    "clean:client": "cd client && rm -rf node_modules yarn.lock",
     "compile": "truffle compile",
-    "installAll": "npm-run-all --sequential install:*",
+    "installAll": "yarn install && npm-run-all --sequential install:*",
     "install:contracts": "yarn install",
-    "install:client": "cd client &&  yarn install",
+    "install:client": "cd client && yarn install",
     "migrate": "truffle migrate",
     "test": "npm-run-all --sequential test:*",
     "test:client": "cd client && yarn test",
@@ -18,7 +21,8 @@
     "watch": "cd client && react-scripts test"
   },
   "dependencies": {
-    "dotenv": "^7.0.0"
+    "dotenv": "^7.0.0",
+    "transform-runtime": "^0.0.0"
   },
   "devDependencies": {
     "babel-polyfill": "^6.26.0",
@@ -29,7 +33,8 @@
     "ganache-cli": "^6.4.1",
     "mocha-logger": "^1.0.6",
     "npm-run-all": "^4.1.5",
-    "openzeppelin-solidity": "^2.1.2",
-    "truffle": "^5.0.8"
+    "openzeppelin-solidity": "2.1.3",
+    "truffle": "^5.0.8",
+    "truffle-hdwallet-provider": "^1.0.5"
   }
 }
