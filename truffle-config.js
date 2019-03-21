@@ -3,18 +3,18 @@ require('babel-register');
 require('babel-polyfill');
 var HDWalletProvider = require("truffle-hdwallet-provider");
 
-// const path = require("path");
+const path = require("path");
 
 module.exports = {
-  // contracts_build_directory: path.join(__dirname, "./client/src/contracts"),
+  contracts_build_directory: path.join(__dirname, "./client/src/contracts"),
   // compilers: {
   //   solc: {
   //     version: "0.5.2"
   //   }
   // },
-  // mocha: {
-  //   useColors: true
-  // },
+  mocha: {
+    useColors: true
+  },
   networks: {
     development: {
       host: 'localhost',
