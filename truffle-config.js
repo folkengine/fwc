@@ -29,9 +29,9 @@ module.exports = {
     },
     infura: {
       provider: function() {
-        return new HDWalletProvider(process.env.MNEMONIC, "https://ropsten.infura.io/v3/2b0cafabdc904bada4af38e6ab9ef990");
+        return new HDWalletProvider(process.env.MNEMONIC, "https://ropsten.infura.io/v3/29c9aca6789b4ec5b2c3bc6b4a31e5b8");
       },
-      network_id: 3
+      network_id: '*'
     }
   },
   rpc: {
