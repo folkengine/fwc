@@ -24,7 +24,7 @@
     "start": "cd client && react-scripts start",
     "test": "npm-run-all --sequential test:*",
     "test:client": "cd client && yarn test",
-    "test:contracts": "truffle test",
+    "test:contracts": "bin/truffle-test-swap-config.sh",
     "watch": "cd client && react-scripts test"
   },
   "dependencies": {
