@@ -8,6 +8,13 @@ import Roles from './contracts/Roles';
 import SafeMath from './contracts/SafeMath';
 
 const options = {
+  web3: {
+    block: false,
+    fallback: {
+      type: 'ws',
+      url: 'ws://127.0.0.1:8545'
+    }
+  },
   contracts: [ERC20, ERC20Mintable, FWC, IERC20, Migrations, MinterRole, Roles, SafeMath],
   events: {
     ERC20: ['Approval', 'Transfer'],

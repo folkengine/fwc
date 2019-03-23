@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "dotenv": "^7.0.0",
+    "react-router": "^5.0.0",
     "transform-runtime": "^0.0.0"
   },
   "devDependencies": {
