@@ -16,3 +16,5 @@ Friendly Wagering Coin
     }
   }
 ```
+
+[FWC on Ethernet Ropsten](https://ropsten.etherscan.io/address/0x0577c772c79451002f639ad2f9afc71c41b3b39a)
