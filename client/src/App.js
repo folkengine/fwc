@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
+import { Drizzle } from 'drizzle';
+import { DrizzleContext } from "drizzle-react";
+
 import logo from './logo.svg';
 import './App.css';
+
+import drizzleOptions from "./drizzleOptions";
+
+const drizzle = new Drizzle(drizzleOptions);
 
 class App extends Component {
   render() {
