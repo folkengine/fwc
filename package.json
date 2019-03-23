@@ -7,21 +7,29 @@
   "author": "Christoph <ignatz@gmail.com>",
   "license": "GPL-3.0",
   "scripts": {
+    "build": "npm-run-all --sequential build:*",
+    "build:contracts": "truffle build",
+    "build:client": "cd client && yarn build",
     "clean": "npm-run-all --sequential clean:*",
     "clean:solidity": "rm -rf node_modules yarn.lock",
     "clean:client": "cd client && rm -rf node_modules yarn.lock",
     "compile": "truffle compile",
+    "deploy": "truffle deploy",
+    "eject": "cd client && react-scripts eject",
     "installAll": "yarn install && npm-run-all --sequential install:*",
     "install:contracts": "yarn install",
     "install:client": "cd client && yarn install",
     "migrate": "truffle migrate",
+    "ropsten": "truffle deploy --network infura",
+    "start": "cd client && react-scripts start",
     "test": "npm-run-all --sequential test:*",
     "test:client": "cd client && yarn test",
-    "test:contracts": "truffle test",
+    "test:contracts": "bin/truffle-test-swap-config.sh",
     "watch": "cd client && react-scripts test"
   },
   "dependencies": {
     "dotenv": "^7.0.0",
+    "react-router": "^5.0.0",
     "transform-runtime": "^0.0.0"
   },
   "devDependencies": {
