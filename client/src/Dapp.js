@@ -16,8 +16,7 @@ export default () => (
       return (
         <div className="App">
           <div>
-            <h1>Drizzle Examples</h1>
-            <p>Examples of how to get started with Drizzle in various situations.</p>
+            <h1>Friendly Wagering Coin (FWC) Tester</h1>
           </div>
           
           <div className="section">
@@ -45,6 +44,16 @@ export default () => (
               />
             </p>
             <p>
+              <strong>Is Minter: </strong>
+              <ContractData
+                drizzle={drizzle}
+                drizzleState={drizzleState}
+                contract="FWC"
+                method="isMinter"
+                methodArgs={[accounts[0]]}
+              />
+            </p>
+            <p>
               <strong>My Balance: </strong>
               <ContractData
                 drizzle={drizzle}
@@ -54,6 +63,14 @@ export default () => (
                 methodArgs={[accounts[0]]}
               />
             </p>
+            <h3>Make Wager</h3>
+            <ContractForm
+              drizzle={drizzle}
+              drizzleState={drizzleState}
+              contract="FWC"
+              method="makeWager"
+              labels={["Amount", "Description"]}
+            />
             <h3>Send Tokens</h3>
             <ContractForm
               drizzle={drizzle}
@@ -61,6 +78,14 @@ export default () => (
               contract="FWC"
               method="transfer"
               labels={["To Address", "Amount to Send"]}
+            />
+            <h3>Mint Tokens</h3>
+            <ContractForm
+              drizzle={drizzle}
+              drizzleState={drizzleState}
+              contract="FWC"
+              method="mint"
+              labels={["To Address", "Amount to Mint"]}
             />
           </div>
         </div >
