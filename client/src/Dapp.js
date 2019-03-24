@@ -59,7 +59,7 @@ export default () => (
               drizzle={drizzle}
               drizzleState={drizzleState}
               contract="FWC"
-              method="transfer"
+              method="mint"
               labels={["To Address", "Amount to Send"]}
             />
           </div>

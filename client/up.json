@@ -1,0 +1,5 @@
+{
+  "name": "up-example-react-express",
+  "regions": ["us-east-2"],
+  "profile": "up"
+}
