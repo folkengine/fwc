@@ -2,6 +2,8 @@ import React from "react";
 import { newContextComponents } from "drizzle-react-components";
 import { DrizzleContext } from "drizzle-react";
 
+import Simple from './components/Simple';
+
 const { AccountData, ContractData, ContractForm } = newContextComponents;
 
 export default () => (
@@ -18,6 +20,10 @@ export default () => (
           <div>
             <h1>Friendly Wagering Coin (FWC) Tester</h1>
           </div>
+          
+          <Simple
+            drizzle={drizzle}
+            drizzleState={drizzleState} />
           
           <div className="section">
             <h2>Active Account</h2>

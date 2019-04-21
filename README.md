@@ -18,3 +18,8 @@ Friendly Wagering Coin
 ```
 
 [FWC on Ethernet Ropsten](https://ropsten.etherscan.io/address/0x0577c772c79451002f639ad2f9afc71c41b3b39a)
+
+## Helpful 
+
+* [truffle-flattener](https://www.npmjs.com/package/truffle-flattener)
+* [OpenZeppelin test helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)

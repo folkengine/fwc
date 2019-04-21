@@ -12300,12 +12300,12 @@
     "3": {
       "events": {},
       "links": {},
-      "address": "0x0577c772c79451002F639Ad2f9aFC71c41B3B39A",
-      "transactionHash": "0x0b47a352c40c529be9947fcef7317cee649bb7fbed36dde8c5abba08a45b845c"
+      "address": "0x650841B723635246Cdf63598134B42b33D2d8b9E",
+      "transactionHash": "0xc975e20814e68d27030cf3c0c113c4f5e580705397808a93800e4c9cd0922724"
     }
   },
   "schemaVersion": "3.0.3",
-  "updatedAt": "2019-03-23T23:28:16.311Z",
+  "updatedAt": "2019-04-21T14:59:27.076Z",
   "devdoc": {
     "methods": {
       "allowance(address,address)": {
