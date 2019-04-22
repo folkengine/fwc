@@ -1,0 +1,43 @@
+type Wager @entity {
+  id: ID!
+  actionId: BigInt! # uint256
+  actor: Bytes! # address
+  msg: String! # string
+  amount: BigInt! # uint256
+  balance: BigInt! # uint256
+}
+type WagerAccepted @entity {
+  id: ID!
+  actionId: BigInt! # uint256
+  acceptor: Bytes! # address
+  msg: String! # string
+  amount: BigInt! # uint256
+  balance: BigInt! # uint256
+}
+type Shame @entity {
+  id: ID!
+  actionId: BigInt! # uint256
+  loser: Bytes! # address
+  winner: Bytes! # address
+  amount: BigInt! # uint256
+}
+type MinterAdded @entity {
+  id: ID!
+  account: Bytes! # address
+}
+type MinterRemoved @entity {
+  id: ID!
+  account: Bytes! # address
+}
+type Transfer @entity {
+  id: ID!
+  from: Bytes! # address
+  to: Bytes! # address
+  value: BigInt! # uint256
+}
+type Approval @entity {
+  id: ID!
+  owner: Bytes! # address
+  spender: Bytes! # address
+  value: BigInt! # uint256
+}

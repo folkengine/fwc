@@ -17,9 +17,29 @@ Friendly Wagering Coin
   }
 ```
 
-[FWC on Ethernet Ropsten](https://ropsten.etherscan.io/address/0x0577c772c79451002f639ad2f9afc71c41b3b39a)
+[FWC on Ethernet Ropsten](https://ropsten.etherscan.io/address/0xb5aaf55BB0a3a10C718594000723d1fE49F9A955)
+
+```js
+graph init \
+  --from-contract 0xb5aaf55BB0a3a10C718594000723d1fE49F9A955 \
+  --network ropsten \
+  folkengine/fwc graph
+```
 
 ## Helpful 
 
 * [truffle-flattener](https://www.npmjs.com/package/truffle-flattener)
 * [OpenZeppelin test helpers](https://github.com/OpenZeppelin/openzeppelin-test-helpers)
+
+## Steps
+
+* Create Contract
+* Flatten Contract
+* Migrate Contact to Ropsten 
+* Verify [Contract Code](https://ropsten.etherscan.io/address/0xb5aaf55BB0a3a10C718594000723d1fE49F9A955#code)
+* Init graph project `graph init --from-contract 0xb5aaf55BB0a3a10C718594000723d1fE49F9A955 --network ropsten folkengine/fwc graph`
+
+
+
+
+https://api-ropsten.etherscan.io/api?module=contract&action=getabi&address=0xb5aaf55BB0a3a10C718594000723d1fE49F9A955

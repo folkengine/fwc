@@ -1,0 +1,43 @@
+specVersion: 0.0.1
+description: Friendly Wagering Coin Subgraph
+repository: 'https://github.com/folkengine/fwc'
+schema:
+  file: schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: Contract
+    network: ropsten
+    source:
+      address: '0xb5aaf55BB0a3a10C718594000723d1fE49F9A955'
+      abi: Contract
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.2
+      language: wasm/assemblyscript
+      entities:
+        - Wager
+        - WagerAccepted
+        - Shame
+        - MinterAdded
+        - MinterRemoved
+        - Transfer
+        - Approval
+      abis:
+        - name: Contract
+          file: Contract/abis/Contract.json
+      eventHandlers:
+        - event: 'Wager(uint256,address,string,uint256,uint256)'
+          handler: handleWager
+        - event: 'WagerAccepted(uint256,address,string,uint256,uint256)'
+          handler: handleWagerAccepted
+        - event: 'Shame(uint256,address,address,uint256)'
+          handler: handleShame
+        - event: MinterAdded(address)
+          handler: handleMinterAdded
+        - event: MinterRemoved(address)
+          handler: handleMinterRemoved
+        - event: 'Transfer(address,address,uint256)'
+          handler: handleTransfer
+        - event: 'Approval(address,address,uint256)'
+          handler: handleApproval
+      file: Contract/Contract.wasm

@@ -21,7 +21,7 @@
     "install:client": "cd client && yarn install",
     "migrate": "truffle migrate",
     "ropsten": "truffle deploy --network infura",
-    "start": "cd client && react-scripts start",
+    "start": "cd client && yarn start",
     "test": "npm-run-all --sequential test:*",
     "test:client": "cd client && yarn test",
     "test:contracts": "bin/truffle-test-swap-config.sh",
@@ -43,6 +43,7 @@
     "npm-run-all": "^4.1.5",
     "openzeppelin-solidity": "2.1.3",
     "truffle": "^5.0.8",
+    "truffle-flattener": "^1.3.0",
     "truffle-hdwallet-provider": "^1.0.5"
   }
 }

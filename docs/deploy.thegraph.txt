@@ -1,0 +1,32 @@
+/Users/christoph/n/bin/node /Users/christoph/n/lib/node_modules/yarn/bin/yarn.js run deploy
+yarn run v1.15.2
+$ graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ folkengine/fwc
+  Skip migration: Bump mapping apiVersion from 0.0.1 to 0.0.2
+✔ Apply migrations
+✔ Load subgraph from subgraph.yaml
+  Compile data source: Contract => build/Contract/Contract.wasm
+✔ Compile subgraph
+  Copy subgraph file build/schema.graphql
+  Write subgraph file build/Contract/abis/Contract.json
+  Write subgraph manifest build/subgraph.yaml
+✔ Write compiled subgraph to build/
+  Add file to IPFS build/schema.graphql
+                .. Qmaq2A8WnK6KNgtWj2dWtoDEjmBvoX6tUCFvnzQNGbfzVJ
+  Add file to IPFS build/Contract/abis/Contract.json
+                .. QmadPCyLBeaJk7nfTpxfVB84a4b5jnkiuJAy9HuKxLeUod
+  Add file to IPFS build/Contract/Contract.wasm
+                .. QmehmEU9pVNTGGjZxY84swLw9rgju92fZfDtGgNwdyY8jM
+✔ Upload subgraph to IPFS
+
+Build completed: QmZCeRVX5EFiBq7RWT3LFqbwkjQp1rfK6NeRiAkJyGTe4U
+
+Deployed to https://thegraph.com/explorer/subgraph/folkengine/fwc
+
+Subgraph endpoints:
+Queries (HTTP):     https://api.thegraph.com/subgraphs/name/folkengine/fwc
+Subscriptions (WS): wss://api.thegraph.com/subgraphs/name/folkengine/fwc
+
+✨  Done in 5.05s.
+
+Process finished with exit code 0
+
