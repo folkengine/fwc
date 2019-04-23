@@ -1,6 +1,8 @@
 import React from "react";
 import { newContextComponents } from "drizzle-react-components";
 import { DrizzleContext } from "drizzle-react";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import Simple from './components/Simple';
 
@@ -17,6 +19,7 @@ export default () => (
       const { accounts } = drizzleState;
       return (
         <div className="App">
+          <ToastContainer />
           <div>
             <h1>Friendly Wagering Coin (FWC) Tester</h1>
           </div>
